@@ -502,7 +502,6 @@ footer {
 }
 
 .footer-text {
-  border: 1px solid red;
   display: flex;
   gap: 30px;
   text-align: left;
@@ -536,7 +535,6 @@ footer {
     width: 100%;
     padding-top: 100px;
     text-align: center;
-
     position: fixed;
     top: -100%;
     left: 0;
@@ -705,6 +703,10 @@ footer {
   .news-img {
     width:  50%;
     height: 100px;
+  }
+
+  .introduction p {
+    font-size: 1rem;
   }
 
   .faq-title {
