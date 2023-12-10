@@ -705,6 +705,15 @@ footer {
     height: 100px;
   }
 
+  .introduction-right {
+    padding-top: 30%;
+  }
+
+  .introduction {
+    height: 15vh;
+    gap: 20px;
+  }
+  
   .introduction p {
     font-size: 1rem;
   }
@@ -716,10 +725,6 @@ footer {
   .faq-q {
     bottom: 0;
     top: 0px;
-  }
-
-  .introduction {
-    height: 30vh;
   }
 
   .footer-nav {
