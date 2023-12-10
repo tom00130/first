@@ -1,22 +1,22 @@
 #splash {
-position: fixed;
-top: 0;
-z-index: 999;
-width: 100vw;
-height: 100vh;
-background:#e3c4a8;
-text-align:center;
-color:#fff;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	width: 100vw;
+	height: 100vh;
+	background:#e3c4a8;
+	text-align:center;
+	color:#fff;
 }
 
 #splash_text {
-position: absolute;
-top: 55%;
-left: 50%;
-z-index: 999;
-width: 100vw;
-transform: translate(-50%, -50%);
-color: #fff;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	z-index: 999;
+	width: 100vw;
+	transform: translate(-50%, -50%);
+	color: #fff;
 }
 
 
@@ -28,20 +28,20 @@ color: #fff;
 }
 
 #splash_logo svg{
-    width: 1000px;
+		width: 1000px;
 }
 
 
 #mask path {
-		fill-opacity: 0;
-		transition: fill-opacity 3s;
-		fill: none;
-		stroke: #212121;
+	fill-opacity: 0;
+	transition: fill-opacity 3s;
+	fill: none;
+	stroke: #212121;
 	}
 
 
 #mask.done path{
-	  fill: #212121;
-	  fill-opacity: 1;
-	  stroke: none;
+	fill: #212121;
+	fill-opacity: 1;
+	stroke: none;
 	}
