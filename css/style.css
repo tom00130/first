@@ -706,7 +706,7 @@ footer {
   }
 
   .introduction-right {
-    padding-top: 27%;
+    padding-top: 28%;
   }
 
   .introduction {
@@ -715,7 +715,8 @@ footer {
   }
   
   .introduction p {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    padding: 1em 5px;
   }
 
   .faq-title {
