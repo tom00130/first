@@ -705,6 +705,14 @@ footer {
     height: 120px;
   }
 
+  .view-more,
+  .view-more-btn::before,
+  .view-more-btn::after {
+    color: #212121;
+    background: #212121;
+  }
+
+
   .introduction-right {
     padding-top: 28%;
   }
