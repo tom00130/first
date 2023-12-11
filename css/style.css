@@ -560,6 +560,7 @@ footer {
     display: block;
     margin: 5px auto;
     padding: 25px;
+    text-shadow: 2px 2px 5px #ffffff;
   }
 
   .hamburger-menu-sp ul li a:hover {
@@ -711,7 +712,7 @@ footer {
 
   .view-more-btn::before,
   .view-more-btn::after {
-     background: #212121;
+  background: #212121;
   }
 
   .introduction-right {
