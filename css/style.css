@@ -253,13 +253,13 @@ small::after {
 
 .scroll::after {
   content: "";
-  width: 15px;
+  width: 10px;
   height: 1.5px;
   position: absolute;
   bottom: 0px;
   right: 50px;
   background: #212121;
-  transform: rotate(45deg) translate(-2px, -5px);
+  transform: rotate(45deg) translate(-2px, -3px);
 }
 
 
@@ -851,8 +851,9 @@ dd {
     padding-right: 115px;
   }
 
-  .scroll::before {
-    width: 100px;
+  .scroll::before,
+  .scroll::after {
+    right: 15px;
   }
 
 
