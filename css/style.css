@@ -882,7 +882,7 @@ dd {
   }
 
   .fluid-bottom {
-    margin-top: 0px;
+    margin-top: -70px;
     margin-left: auto;
   }
 
@@ -890,7 +890,11 @@ dd {
     margin-right: 0;
   }
 
+  .fluid-sauna {
+    margin-top: -70px;
+  }
 
+  
   #faq {
     flex-direction: column;
     padding: 10px 8px 50px;
