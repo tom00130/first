@@ -946,6 +946,7 @@ dd {
   .access-layout {
     flex-direction: column-reverse;
     align-items: flex-start;
+    padding-bottom: 30px;
   }
 
   #access-map,
@@ -954,6 +955,6 @@ dd {
   }
 
   #access-map {
-    margin-bottom: 50px;
+/*     margin-bottom: 50px; */
   }
 }
