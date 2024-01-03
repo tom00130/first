@@ -865,6 +865,10 @@ dd {
   flex-direction: column;
   gap: 0;
   }
+
+  .introduction:nth-child(even) {
+    flex-direction: row-reverse;
+  }
   
   .introduction p {
     font-size: 0.9rem;
