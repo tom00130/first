@@ -734,7 +734,7 @@ dd {
     height: 40px;
     cursor: pointer;
     position: fixed;
-    top: 3vh;
+    top: 2vh;
     right: 20px;
     transition: ease 0.5s;
     z-index: 50;
@@ -751,7 +751,7 @@ dd {
     transition: ease 0.5s;
   }
   .toggle_btn span:nth-child(1) {
-    top: 5px;
+    top: 8px;
   }
 
   .toggle_btn span:nth-child(2) {
@@ -759,7 +759,7 @@ dd {
   }
 
   .toggle_btn span:nth-child(3) {
-    bottom: 5px;
+    bottom: 8px;
   }
 
   .open .toggle_btn span {
