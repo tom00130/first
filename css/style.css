@@ -941,3 +941,16 @@ dd {
     flex-direction: column;
   }
 }
+
+@media(max-width:600px) {
+  .access-layout {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  #access-map,
+  .access-text {
+    width: 100%;
+    margin-bottom:0;
+  }
+}
