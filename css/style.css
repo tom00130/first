@@ -767,7 +767,7 @@ dd {
   }
 
   .open .toggle_btn span:nth-child(1) {
-    transform: translateY(18px) rotate(-45deg);
+    transform: translateY(12px) rotate(-45deg);
   }
 
   .open .toggle_btn span:nth-child(2) {
@@ -954,6 +954,6 @@ dd {
   }
 
   #access-map {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
