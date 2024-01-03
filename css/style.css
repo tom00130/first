@@ -43,7 +43,7 @@ header {
   left: 0;
   right: 0;
   z-index: 30;
-  background: linear-gradient(#fce6d4ba, #1c1a180c);
+  background: linear-gradient(#ffffff90, #1c1a180c);
 }
 
 .logo {
@@ -51,7 +51,7 @@ header {
 }
 
 .main-logo img {
-  filter: drop-shadow(0px 0px 2.7px #fce6d4ba);
+  filter: drop-shadow(0px 0px 2.7px #ffffff90);
 }
 
 .header-nav-pc {
@@ -103,14 +103,17 @@ header {
 
 
 
-
-
 main {
   margin: 0 auto;
   text-align: center;
 }
 
 
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 2% 30px;
+}
 
 .wrapper {
   max-width: 1000px;
@@ -119,29 +122,54 @@ main {
 }
 
 .section-title {
-  margin: 50px 0 60px;
-  text-align: center;
-  position: relative;
-}
-
-h2 {
-  font-size: 1.8rem;
+  margin: 30px 0 30px;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  text-align: left;
+  text-shadow: 0 0 10px #ffffff90;
 }
 
 small {
-  position: absolute;
-  bottom: -18px;
-  left: 0;
-  right: 0;
+  font-size: 1.3rem;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 150px;
+  position: relative;
 }
+
+small::before,
+small::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background: #212121;
+  position: absolute;
+}
+
+small::before {
+  top: 60%;
+  left: 130%;
+}
+
+small::after {
+  top: 60%;
+  right: 130%;
+}
+
+
 
 #about {
   padding-top: 50px;
   margin-bottom: 50px;
 }
 
+.about {
+  margin-bottom: 50px;
+}
+
 .about img {
-  width: 100px;
+  width: 150px;
   vertical-align: -5px;
 }
 
@@ -158,21 +186,16 @@ small {
 
 
 
-
-
 #news {
+  margin: 0 auto;
   background: #FFF;
-  border: 1px;
-  border-radius: 50px;
-  padding-top: 5px;
-  padding-bottom: 15px;
-  box-shadow: 0px 0px 12px #4593afb9 inset;
+  padding: 5px 80px 15px;
+  box-shadow: 0px 0px 12px #606060b9;
 }
 
 .news-contents {
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
   display: flex;
   gap: 15px;
   overflow-x: scroll;
@@ -180,7 +203,7 @@ small {
 }
 
 .news-content-layout {
-  width: 200px;
+  width: 300px;
   margin: 10px;
   background: #FFF;
   display: flex;
@@ -189,7 +212,7 @@ small {
 }
 
 .news-img {
-  height: 160px;
+  height: 200px;
 }
 
 .news-img img {
@@ -199,13 +222,14 @@ small {
 }
 
 .news-text {
+  height: 150px;
   padding: 15px;
   text-align: left;
   font-size: 0.75rem;
 }
 
 .news-text p {
-  margin: 0;
+  margin: 10px 0;
 }
 
 .scroll {
@@ -214,6 +238,7 @@ small {
   padding-right: 140px;
   color: #212121;
   padding-bottom: 3px;
+  margin-bottom: 30px;
 }
 
 .scroll::before {
@@ -240,80 +265,66 @@ small {
 
 
 #introduction {
-  background: #FFF;
-  border: 1px;
-  border-radius: 50px;
-  padding-top: 5px;
-  padding-bottom: 50px;
-  box-shadow: 0px 0px 12px rgba(184, 202, 23, 0.894) inset;
+  padding: 0 80px 60px;
 }
 
 .introduction-layout {
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
   display: flex;
-}
-
-.introduction-left {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 70px;
-}
-
-.introduction-right {
-  width: 50%;
-  padding-top: 25%;
-  display: flex;
-  flex-direction: column;
-  gap: 70px;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .introduction {
-  width: 100%;
-  height: 300px;
+  width: 50vmin;
   display: flex;
-  gap: 40px;
+  gap: 15px;
 }
 
 .introduction p {
   font-size: 1.3rem;
   writing-mode: vertical-rl;
   margin: 0;
-  padding: 1em 7px;
+  padding: 1em 2%;
   height: max-content;
   border: 1px solid #212121;
-  background: transparent;
+  background: #FFF;
 }
 
 .fluid {
-  max-width: 300px;
+  height: 30vmin;
   overflow: hidden;
   border: 1px solid;
 }
 
+.fluid img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.fluid-bottom {
+  margin-top: 220px;
+}
+
+.fluid-outbath {
+  margin-right: -50px;
+}
 
 .fluid-1 {
   animation: fluid-rotate-1 15s linear 0s infinite;
 }
 
 @keyframes fluid-rotate-1 {
-
   0%,
   100% {
     border-radius: 49% 51% 46% 54% / 55% 56% 44% 45%;
   }
-
   20%,
   60% {
     border-radius: 39% 61% 58% 42% / 44% 46% 54% 56%;
   }
-
   40% {
     border-radius: 37% 63% 61% 39% / 48% 45% 55% 52%;
   }
-
   80% {
     border-radius: 50% 50% 39% 61% / 56% 58% 42% 44%;
   }
@@ -324,21 +335,17 @@ small {
 }
 
 @keyframes fluid-rotate-2 {
-
   0%,
   100% {
     border-radius: 37% 63% 61% 39% / 48% 45% 55% 52%;
   }
-
   20%,
   60% {
     border-radius: 50% 50% 39% 61% / 56% 58% 42% 44%;
   }
-
   40% {
     border-radius: 49% 51% 46% 54% / 55% 56% 44% 45%;
   }
-
   80% {
     border-radius: 39% 61% 58% 42% / 44% 46% 54% 56%;
   }
@@ -349,21 +356,17 @@ small {
 }
 
 @keyframes fluid-rotate-3 {
-
   0%,
   100% {
     border-radius: 39% 61% 58% 42% / 44% 46% 54% 56%;
   }
-
   20%,
   60% {
     border-radius: 49% 51% 46% 54% / 55% 56% 44% 45%;
   }
-
   40% {
     border-radius: 50% 50% 39% 61% / 56% 58% 42% 44%;
   }
-
   80% {
     border-radius: 37% 63% 61% 39% / 48% 45% 55% 52%;
   }
@@ -374,55 +377,36 @@ small {
 }
 
 @keyframes fluid-rotate-4 {
-
   0%,
   100% {
     border-radius: 50% 50% 39% 61% / 56% 58% 42% 44%;
   }
-
   20%,
   60% {
     border-radius: 37% 63% 61% 39% / 48% 45% 55% 52%;
   }
-
   40% {
     border-radius: 39% 61% 58% 42% / 44% 46% 54% 56%;
   }
-
   80% {
     border-radius: 49% 51% 46% 54% / 55% 56% 44% 45%;
   }
 }
 
 
-.fluid img {
-  height: 100%;
-  object-fit: cover;
-}
-
-.fluid-left p {
-  margin-left: 0;
-}
-
-.fluid-right {
-  margin: 0 0 0 auto;
-}
-
-.fluid-right p {
-  margin-right: 0;
-}
-
-
-
-
-
 
 #faq {
-  padding-top: 30px;
   background: #4593af;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 10px 160px 50px;
 }
 
 .faq-accordion-area {
+  width: 50%;
+  padding-top: 70px;
   text-align: left;
 }
 
@@ -460,7 +444,6 @@ small {
 .faq-title::before {
   transform: rotate(0deg);
   transition: ease-out .7s;
-
 }
 
 .faq-title::after {
@@ -501,15 +484,6 @@ footer {
   text-align: center;
 }
 
-.up-footer {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  z-index: 10;
-
-}
-
 .footer-logo {
   width: 100px;
   margin-left: 8px;
@@ -518,11 +492,7 @@ footer {
 
 .footer-text {
   width: 80%;
-  /* display: flex; */
-  /* justify-content: space-between; */
   margin: 0 auto;
-  /* text-align: left; */
-  /* align-items: flex-end; */
 }
 
 .footer-text p {
@@ -535,36 +505,80 @@ footer {
 
 
 
-
-
-
 .up-wrapper {
-  max-width: 1000px;
-  margin: 50px auto 0;
+  max-width: 1500px;
+  margin: 50px auto 20px;
   padding: 12vh 2% 0;
 }
 
 .up-background {
   background: #FFF;
-  border: 1px;
-  border-radius: 50px;
   padding-top: 5px;
   padding-bottom: 15px;
-  box-shadow: 0px 0px 12px #4593afb9 inset;
+  box-shadow: 0px 0px 12px #606060b9;
 }
 
 .up-contents {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 50px;
 }
 
+.up-section-title {
+  margin: 15px 0 15px;
+  font-size: 2rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.up-price-small::before,
+.up-price-small::after {
+  content: "";
+  width: 80px;
+  height: 1px;
+  background: #212121;
+  position: absolute;
+}
+
+.up-price-small::before {
+  top: 60%;
+  left: 110%;
+}
+
+.up-price-small::after {
+  top: 60%;
+  right: 110%;
+}
+
+.price-text span{
+  position: relative;
+  margin-right: 20px;
+}
+
+.price-text span:last-of-type {
+  margin: 0 30px;
+  padding-left: 7px;
+}
+
+.price-text span::before {
+  content: "";
+  width: 138%;
+  height: 130%;
+  border: 1px solid;
+  position: absolute;
+  top: -4px;
+  left: -7px;
+}
 
 table {
-  width: 80%;
+  width: 100%;
   margin: 30px auto 0;
   border-collapse: collapse;
+}
+
+table:last-of-type {
+  margin-bottom: 45px;
 }
 
 tr {
@@ -585,8 +599,6 @@ td {
   border: 2px solid #212121;
 }
 
-
-
 #contact {
   max-width: 800px;
   margin: 0 auto;
@@ -601,7 +613,6 @@ td {
 
 dt,
 dd {
-  /* width: 100%; */
   margin: 0;
 }
 
@@ -637,7 +648,6 @@ dd {
   background-color: #4593af;
 }
 
-
 .access-layout {
   display: flex;
   justify-content: space-between;
@@ -645,7 +655,8 @@ dd {
 
 #access-map {
   width: 55%;
-  height: 300px;
+  height: 350px;
+  margin-bottom: 80px;
 }
 
 .access-text {
@@ -657,7 +668,18 @@ dd {
   margin-bottom: 1.5em;
 }
 
-@media(max-width:800px) {
+.up-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+@media(max-width:1300px) {
+
+  body {
+    font-size: 0.8rem;
+  }
 
   .header-nav-pc {
     display: none;
@@ -699,7 +721,7 @@ dd {
     display: block;
     margin: 5px auto;
     padding: 18px;
-    text-shadow: 0px 0px 10px #ffffffbb;
+    text-shadow: 0px 0px 10px #ffffff90;
   }
 
   .hamburger-menu-sp ul li a:hover {
@@ -708,18 +730,18 @@ dd {
   }
 
   .toggle_btn {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     position: fixed;
-    top: 3.5vh;
+    top: 2.5vh;
     right: 20px;
     transition: ease 0.5s;
     z-index: 50;
   }
 
   .toggle_btn span {
-    width: 40px;
+    width: 30px;
     height: 2px;
     background-color: #212121;
     border-radius: 4px;
@@ -728,13 +750,12 @@ dd {
     left: 0;
     transition: ease 0.5s;
   }
-
   .toggle_btn span:nth-child(1) {
     top: 5px;
   }
 
   .toggle_btn span:nth-child(2) {
-    top: 19px;
+    top: 14px;
   }
 
   .toggle_btn span:nth-child(3) {
@@ -746,7 +767,7 @@ dd {
   }
 
   .open .toggle_btn span:nth-child(1) {
-    transform: translateY(14px) rotate(-45deg);
+    transform: translateY(9px) rotate(-45deg);
   }
 
   .open .toggle_btn span:nth-child(2) {
@@ -754,7 +775,7 @@ dd {
   }
 
   .open .toggle_btn span:nth-child(3) {
-    transform: translateY(-13px) rotate(45deg);
+    transform: translateY(-9px) rotate(45deg);
   }
 
   .mask {
@@ -775,65 +796,7 @@ dd {
     z-index: 10;
   }
 
-  .introduction-layout {
-    width: 90%;
-    }
-  
-    .introduction-right {
-      padding-top: 20%;
-    }
-  
-    .introduction {
-      height: 250px;
-      gap: 20px;
-    }
-  
-    .introduction p {
-      font-size: 1rem;
-      padding: 1em 5px;
-    }
-}
 
-@media(max-width:767px) {
-
-
-  body {
-    font-size: 0.8rem;
-  }
-
-  .toggle_btn {
-    width: 30px;
-    height: 30px;
-    top: 2.5vh;
-  }
-
-  .toggle_btn span {
-    width: 30px;
-  }
-
-  .toggle_btn span:nth-child(1) {
-    top: 5px;
-  }
-
-  .toggle_btn span:nth-child(2) {
-    top: 14px;
-  }
-
-  .toggle_btn span:nth-child(3) {
-    bottom: 5px;
-  }
-
-  .open .toggle_btn span:nth-child(1) {
-    transform: translateY(9px) rotate(-45deg);
-  }
-
-  .open .toggle_btn span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .open .toggle_btn span:nth-child(3) {
-    transform: translateY(-9px) rotate(45deg);
-  }
 
   header {
     height: 10vh;
@@ -849,10 +812,14 @@ dd {
 
   .section-title {
     margin: 30px 0 40px;
+    font-size: 1rem;
+    flex-direction: column;
   }
 
-  h2 {
-    font-size: 1.4rem;
+  small {
+    font-size: 0.9rem;
+    margin-top: -20px;
+    margin-left: 0;
   }
 
   .cp-1,
@@ -863,30 +830,25 @@ dd {
 
 
   #news {
-    padding-bottom: 15px;
+  padding: 5px 8px 15px;
   }
 
-.news-contents {
+  .news-contents {
     height: 40vh;
-    flex-direction: column;
     gap: 4px;
     overflow-y: scroll;
   }
 
   .news-content-layout {
-    flex-direction: row;
-    width: 90%;
+    width: 170px;
   }
 
   .news-img {
-    width: 45%;
     height: 100px;
   }
 
-  .scroll,
-  .scroll::before,
-  .scroll::after {
-    display: none;
+  .scroll {
+    padding-right: 115px;
   }
 
   .scroll::before {
@@ -894,31 +856,52 @@ dd {
   }
 
 
-.introduction-layout {
-  width: 90%;
+
+  #introduction {
+  padding: 5px 0px 15px;
   }
 
-  .introduction-right {
-    padding-top: 28%;
+  .introduction-layout {
+  flex-direction: column;
+  gap: 0;
   }
-
-  .introduction {
-    height: 140px;
-    gap: 20px;
-  }
-
+  
   .introduction p {
     font-size: 0.9rem;
     padding: 1em 5px;
   }
 
-  .faq-title {
-    font-size: 0.8rem;
+  .fluid {
+    width: 35vmin;
+    height: 35vmin;
   }
 
-  .faq-q {
-    bottom: 0;
-    top: 0px;
+  .fluid-bottom {
+    margin-top: 0px;
+    margin-left: auto;
+  }
+
+  .fluid-outbath {
+    margin-right: 0;
+  }
+
+
+  #faq {
+    flex-direction: column;
+    padding: 10px 8px 50px;
+  }
+
+  #faq .section-title{
+    margin: 30px auto 0;
+  }
+
+  .faq-accordion-area {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .faq-title {
+    font-size: 0.8rem;
   }
 
   .footer-logo {
@@ -928,11 +911,24 @@ dd {
   th {
     font-size: 0.9rem;
   }
+
   td {
     font-size: 0.7rem;
   }
 
   .access-text {
     font-size: 0.8rem;
+  }
+
+
+
+  .up-wrapper {
+    padding: 5vh 2% 0;
+  }
+
+  .up-section-title {
+    margin: 30px 0 40px;
+    font-size: 1rem;
+    flex-direction: column;
   }
 }
