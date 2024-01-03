@@ -686,8 +686,7 @@ dd {
   }
 
   .hamburger-menu-sp,
-  .toggle_btn,
-  .mask {
+  .toggle_btn  {
     display: block;
   }
 
@@ -779,7 +778,6 @@ dd {
   }
 
   .mask {
-    display: none;
     transition: 0.5s;
   }
 
