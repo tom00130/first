@@ -60,9 +60,8 @@ header {
   margin-top: 4.5vh;
 }
 
-.juwaa {
-  font-family: 'Pacifico', cursive;
-  top: -2px;
+.juwaa img {
+  height: 16px;
 }
 
 .header-nav-pc li a {
