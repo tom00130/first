@@ -951,6 +951,9 @@ dd {
   #access-map,
   .access-text {
     width: 100%;
-    margin-bottom:0;
+  }
+
+  #access-map {
+    margin-bottom: 30px;
   }
 }
