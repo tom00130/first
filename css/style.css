@@ -730,18 +730,18 @@ dd {
   }
 
   .toggle_btn {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     position: fixed;
-    top: 2.5vh;
+    top: 3vh;
     right: 20px;
     transition: ease 0.5s;
     z-index: 50;
   }
 
   .toggle_btn span {
-    width: 30px;
+    width: 40px;
     height: 2px;
     background-color: #212121;
     border-radius: 4px;
@@ -755,7 +755,7 @@ dd {
   }
 
   .toggle_btn span:nth-child(2) {
-    top: 14px;
+    top: 19px;
   }
 
   .toggle_btn span:nth-child(3) {
@@ -767,7 +767,7 @@ dd {
   }
 
   .open .toggle_btn span:nth-child(1) {
-    transform: translateY(9px) rotate(-45deg);
+    transform: translateY(18px) rotate(-45deg);
   }
 
   .open .toggle_btn span:nth-child(2) {
