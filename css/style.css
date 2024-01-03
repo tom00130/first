@@ -437,17 +437,17 @@ small::after {
   content: '';
   top: 48%;
   right: 15px;
-  transition: ease-in .7s;
+  transition: ease-in .3s;
 }
 
 .faq-title::before {
   transform: rotate(0deg);
-  transition: ease-out .7s;
+  transition: ease-out .3s;
 }
 
 .faq-title::after {
   transform: rotate(90deg);
-  transition: ease-out .7s;
+  transition: ease-out .3s;
 }
 
 .faq-title.close::before {
@@ -455,7 +455,7 @@ small::after {
 }
 
 .faq-title.close::after {
-  transform: rotate(-45deg);
+  transform: rotate(135deg);
 }
 
 .faq-text {
